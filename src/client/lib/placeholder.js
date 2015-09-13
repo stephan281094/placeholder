@@ -21,6 +21,15 @@
         var gradient = 'linear-gradient(45deg, #' + first + ', #' + second + ')'
         element.style.background = gradient;
       })
+    },
+
+    generate: function(parent, amount) {
+      var wrapper = document.querySelector(parent);
+      while (amount--) {
+        var item = document.createElement('div');
+        item.classList.add('placeholder-item');
+        wrapper.appendChild(item);
+      }
     }
   }
 })()

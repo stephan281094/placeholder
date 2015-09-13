@@ -18,7 +18,7 @@ body, .placeholder-items, .placeholder-items > li {
   list-style: none;
 }
 
-.placeholder-items > li {
+.placeholder-items > .placeholder-item {
   width: 25%;
   height: 300px;
   float: left;

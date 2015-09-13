@@ -1,3 +1,5 @@
 Template.body.rendered = function () {
-  placeholder.gradient('.placeholder-items li');
+  var p = placeholder;
+  p.generate('.placeholder-items', 24);
+  p.gradient('.placeholder-items .placeholder-item');
 };
