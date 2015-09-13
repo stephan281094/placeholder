@@ -1,7 +1,8 @@
 !(function() {
 
   // helpers
-  function randomHex(options) {
+  function randomHex(opts) {
+    var options = opts || {};
     var random = Math.floor(Math.random() * 16777215).toString(16)
     return random.length === 6 && !_.contains(options.ignore, random) ? random : randomHex(options)
   }
@@ -15,7 +16,10 @@
 
     gradient: function(query) {
       _.map(document.querySelectorAll(query), function(element) {
-        element.style.background = 'linear-gradient(45deg, blue, red)';
+        var first  = randomHex()
+        var second = randomHex()
+        var gradient = 'linear-gradient(45deg, #' + first + ', #' + second + ')'
+        element.style.background = gradient;
       })
     }
   }
