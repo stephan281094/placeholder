@@ -7,9 +7,15 @@
   }
 
   this.placeholder = {
-    color: function(query) {
+    solid: function(query) {
       _.map(document.querySelectorAll(query), function(element) {
         element.style.background = '#' + randomHex({ignore: 'ffffff'})
+      })
+    },
+
+    gradient: function(query) {
+      _.map(document.querySelectorAll(query), function(element) {
+        element.style.background = 'linear-gradient(45deg, blue, red)';
       })
     }
   }

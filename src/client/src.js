@@ -1,3 +1,3 @@
 Template.body.rendered = function () {
-  placeholder.color('.placeholder-items li');
+  placeholder.gradient('.placeholder-items li');
 };
