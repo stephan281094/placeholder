@@ -1,8 +1,10 @@
-!(function(window, document) {
+!(function() {
 
   // Constructor
   function Generator(el, opts) {
     this.parent = typeof el === 'object' ? el : document.querySelector(el);
+
+    return this;
   }
 
   Generator.prototype.generate = function(amount) {
@@ -14,4 +16,4 @@
   };
 
   window.Generator = Generator;
-})(window, document);
+})();

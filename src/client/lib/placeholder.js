@@ -9,11 +9,13 @@
   function Placeholder(el, opts) {
     if (!opts) {
       for (var key in opts) {
-          options[key] = opts[key]
+        options[key] = opts[key]
       }
     }
 
     this.elements = typeof el === 'object' ? el : document.querySelectorAll(el)
+
+    return this
   }
 
   // Public functions

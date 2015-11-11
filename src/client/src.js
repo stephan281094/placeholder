@@ -1,9 +1,4 @@
 Template.body.rendered = function () {
-  var g, p;
-
-  g = new Generator('.placeholder-items');
-  g.generate(24);
-
-  p = new Placeholder('.placeholder-item');
-  p.gradient();
+  var g = new Generator('.placeholder-items').generate(24),
+      p = new Placeholder('.placeholder-item').gradient();
 };
