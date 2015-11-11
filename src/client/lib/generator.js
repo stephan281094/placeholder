@@ -15,5 +15,5 @@
     }
   };
 
-  window.Generator = Generator;
+  this.Generator = Generator;
 })();
