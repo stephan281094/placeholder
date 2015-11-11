@@ -39,9 +39,14 @@
     randomHex(opts) {
       var options = opts || {}
       var random = Math.floor(Math.random() * 16777215).toString(16)
-      return random.length === 6 && !_.contains(options.ignore, random) ? random : helpers.randomHex(options)
+
+      if (random.length !== 6 || _.contains(options.ignore, random)) {
+        return helpers.randomHex(options)
+      }
+
+      return random
     }
-  };
+  }
 
   this.Placeholder = Placeholder
 })()
