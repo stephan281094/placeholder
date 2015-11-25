@@ -1,0 +1,25 @@
+{
+  "name": "placeholder",
+  "version": "0.0.0",
+  "description": "A lorem ipsum-ish placeholder utility for dummy data",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stephan281094/placeholder.git"
+  },
+  "author": "Stephan de Vries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephan281094/placeholder/issues"
+  },
+  "homepage": "https://github.com/stephan281094/placeholder",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-copy": "0.0.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
